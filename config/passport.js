@@ -15,7 +15,8 @@ module.exports = function (passport) {
           googleId: profile.id,
           displayName: profile.displayName,
           firstName: profile.name.givenName,
-          lastName: profile.name.familyName,
+          //lastName: profile.name.familyName,
+          lastName: profile.name.givenName,
           image: profile.photos[0].value,
         }
 
